@@ -1,8 +1,11 @@
 // src/data/initialStores.ts
-{
-  "dataVersion": 4,
-  "stores": [
-    {
+export interface Store {
+  id: number;
+  nome: string;
+  [key: string]: unknown;
+}
+export const INITIAL_STORES: Store[] = [
+ 
       "id": "1005",
       "numero": "1005",
       "nome": "MT - TANGARÁ - BRASIL",
