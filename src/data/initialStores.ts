@@ -1,12 +1,55 @@
-// src/data/initialStores.ts
 export interface Store {
-  id: number;
+  id: string;
+  numero: string;
   nome: string;
+  cidade: string;
+  estado: string;
+  cnpj: string;
+  endereco: string;
+  bairro: string;
+  cep: string;
+  regiao: string;
+  tipoLoja: string;
+  gerenteResponsavel: string;
+  ramal: string;
+  telComerciais: string;
+  regionalResponsavel: string;
+  abreDom: string;
+  horarioSemana: string;
+  horarioSabado: string;
+  horarioDomingo: string;
+  areaTotal: number | null;
+  areaVendas: number | null;
+  copa: number | null;
+  salaTi: number | null;
+  salaVm: number | null;
+  almox: number | null;
+  casaMaq: number | null;
+  subestacao: number | null;
+  deposito: number | null;
+  sanitFem: number | null;
+  sanitMasc: number | null;
+  sanitPne: number | null;
+  areaTecnica: number | null;
+  areaTerreo: number | null;
+  areaMezanino: number | null;
+  area1Pav: number | null;
+  area2Pav: number | null;
+  areaTotalConstruida: number | null;
+  estacionamento: number | null;
+  escadaRolante: string;
+  escada: string;
+  elevador: string;
+  plataformaPne: string;
+  acSplit: number | null;
+  acSplitaoSelf: number | null;
+  acFancoil: number | null;
+  acVrf: number | null;
   [key: string]: unknown;
 }
+
 export const INITIAL_STORES: Store[] = [
- 
-      "id": "1005",
+       "id": "1005",
       "numero": "1005",
       "nome": "MT - TANGARÁ - BRASIL",
       "cidade": "TANGARÁ DA SERRA",
